@@ -1,0 +1,47 @@
+body{
+    background-color: blue;
+}
+h1 {
+    text-align: center;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    width: 300px;
+    margin: 0 auto;
+}
+.btn{
+   margin:2rem;
+}
+.tiles {
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+.tiles {
+    font-size: 80px;
+    color:yellow;
+    background:-moz-linear-gradient(45deg, rgba(140, 0, 255, .6) 0%, rgba(2, 242, 114, .7) 100%);
+	background: -webkit-gradient( left bottom, right top, color-stop (0%, rgba(140, 0, 255, .6) ), color-stop(100%, rgba(2, 242, 114, .7) ) );
+	background:  -o-linear-gradient(45deg, rgba(140, 0, 255, .6) 0%, rgba(2, 242, 114, .7) 100%);
+	background: -ms-linear-gradient(45deg, rgba(140, 0, 255, .6) 0%, rgba(2, 242, 114, .7) 100%);
+	background:     linear-gradient(45deg, rgba(140, 0, 255, .6) 0%, rgba(2, 242, 114, .7) 100%);
+    text-align: center;
+    animation: tiles 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes tiles {
+    from {
+      text-shadow: 0 0 1px #fff, 0 0 2px rgb(187, 255, 0), 0 0 3px rgb(229, 255, 0), 0 0 9px red, 0 0 50px red, 0 0 60px red, 0 0 30px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 2px #fff, 0 0 3px white, 0 0 4px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 7px #ff4da6, 0 0 8px #ff4da6;
+    }
+  }
